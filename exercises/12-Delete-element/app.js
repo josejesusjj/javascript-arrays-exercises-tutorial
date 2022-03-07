@@ -1,8 +1,14 @@
 var people = ['juan','ana','michelle','daniella','stefany','lucy','barak', 'emilio'];
 
 //your code below
-let deletePerson = people.filter((element) => element === 'd' || element === 'juan' || element === 'emilio' || element === 'daniella' || element === 'juan' );
-console.log(deletePerson);
+const deletePerson = (person) => {
+   
+    let newArray = people.filter((element) => element !== person );
+    
+    return newArray
+}
+// element !== 'juan' || element !== 'emilio'
+
 //hasta aqui
 
 console.log(deletePerson('daniella'));
